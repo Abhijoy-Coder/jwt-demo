@@ -11,7 +11,7 @@ public class UserController : ControllerBase
 {
     [HttpGet]
     [Route("Admins")]
-    [Authorize(Roles = "Admin-Ass")]
+    [Authorize(Roles = "Admin")]
     public IActionResult AdminEndPoint()
     {
         var currentUser = GetCurrentUser();
